@@ -1,0 +1,57 @@
+POST  http://localhost:4000/api/user
+Content-Type: application/json
+
+{
+    "email": "Anh",
+    "password": "Anh",
+    "name": "Anh"
+}
+
+###
+POST  http://localhost:4000/api/login
+Content-Type: application/json
+
+{
+    "email": "admin",
+    "password": "admin"
+}
+
+###
+GET http://localhost:4000/api/get
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODM0ODE4ODI1YzliZjZmODI3MGIwYyIsImlhdCI6MTY1Mjc3NDc1MSwiZXhwIjoxNjUyNzc1NjUxfQ.1tjdTnwiI1MxKJ4xauRwR4ymTmIszH2NHvyKcq4DR0s
+
+###
+DELETE  http://localhost:4000/api/user/62847e8c71ad96fa48dcbd67
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODQ3ZThjNzFhZDk2ZmE0OGRjYmQ2NyIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjUyODUwNTI5fQ.94u9y5_QnEr5AGV25tz6SqgZdVQFHU9fZOTkqt_3PUg
+
+###
+PUT http://localhost:4000/api/user/62847faa7dd04b76b0bc4897
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODQ3ZmFhN2RkMDRiNzZiMGJjNDg5NyIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjUyODUwNzE3fQ.XpIWwQeXNdBQNs0_41wesHsGpHnPjdE7_OsbwICni3Q
+{
+    "email": "Ha",
+    "name": "Ha"
+}
+
+###
+POST  http://localhost:4000/api/alo
+Content-Type: application/json
+
+{
+    "title": "a",
+    "content": "a"
+}
+
+###
+GET http://localhost:4000/api/user/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODQzZmEyZjliMTQ0YjkwMjk5OGFlMyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY1Mjg2MzU2OH0.gokiguMb1vG2yvUipWqNFIhNe3zcOTfhaXDE0chfc_8
+
+###
+PUT http://localhost:4000/api/user/62847faa7dd04b76b0bc4897
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODQ3ZmFhN2RkMDRiNzZiMGJjNDg5NyIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjUyODUwOTY0fQ.SwpcWnyD1-5FR-NssdJj8wNaESc-NPyc2iZgYMgSd0Q
+
+{
+     "email": "Ha",
+    "name": "Ha"
+}
